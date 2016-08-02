@@ -29,20 +29,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.titleView = [UINavigationItem titleViewForTitle:@"首页"];
-    UIButton *avatar = [UIButton buttonWithType:UIButtonTypeCustom];
-    [avatar setFrame:CGRectMake(0, 0, 35, 35)];
-    [avatar addTarget:self action:@selector(clickedUserAvatar) forControlEvents:UIControlEventTouchUpInside];
-    [avatar setBackgroundImage:[UIImage imageWithUIColor:[UIColor colorWithRed:0.231 green:0.945 blue:0.694 alpha:1.000] size:CGSizeMake(35, 35)] forState:UIControlStateNormal];
-    avatar.masksToBounds = YES;
-    avatar.cornerRadius = CGRectGetMidX(avatar.frame);
-    avatar.borderWidth = 2.0f;
-    avatar.borderColor = [UIColor colorWithHexString:@"ffffff" andAlpha:0.25];
-    [avatar setTitleEdgeInsets:UIEdgeInsetsMake(0, 5, 0, 0)];
-     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:avatar];
     
     [self loadBackground];
     [self loadViewItems];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
 }
 
 - (void)loadViewItems
@@ -243,11 +234,6 @@
     NSLog(@"testAction");
 }
 
-- (void)clickedUserAvatar
-{
-    NSLog(@"clickedUserAvatar");
-}
-
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -264,6 +250,13 @@
     [self.view.layer removeAllAnimations];
     
 }
+
+- (void)appDidEnterBackground
+{
+    _isAppearing = NO;
+    [self.view.layer removeAllAnimations];
+}
+
 - (void)movingBigImageBackgroundView
 {
     if (!_isAppearing) return;

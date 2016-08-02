@@ -8,11 +8,13 @@
 
 #import "UINavigationItem+Addtions.h"
 #import "ZQUtilsMacro.h"
+
 @implementation UINavigationItem (Addtions)
 + (UILabel *)titleViewForTitle:(NSString *)title {
     UILabel *titleView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    //titleView.backgroundColor =[UIColor greenColor];
     titleView.center = CGPointMake(kScreenWidth/2, 22);
-    titleView.font = [UIFont systemFontOfSize:20];
+    titleView.font = [UIFont systemFontOfSize:18];
     titleView.textAlignment = NSTextAlignmentCenter;
     titleView.backgroundColor = [UIColor clearColor];
     titleView.textColor = [UIColor whiteColor];

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2573AE700477A0D0E5C83D2B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A91370885E85FDA7BAE9FB /* libPods.a */; };
+		4F0A729F1D509BC100627161 /* UINavigationItem+Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A729E1D509BC100627161 /* UINavigationItem+Addtions.m */; };
 		4F68F57B1D4F802B0094500E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F68F57A1D4F802B0094500E /* main.m */; };
 		4F68F57E1D4F802B0094500E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F68F57D1D4F802B0094500E /* AppDelegate.m */; };
 		4F68F5811D4F802B0094500E /* HomepageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F68F5801D4F802B0094500E /* HomepageController.m */; };
@@ -15,9 +16,7 @@
 		4F68F5891D4F802B0094500E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F68F5871D4F802B0094500E /* LaunchScreen.storyboard */; };
 		4F68F5941D4F802B0094500E /* HomepageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F68F5931D4F802B0094500E /* HomepageTests.m */; };
 		4F68F59F1D4F802B0094500E /* HomepageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F68F59E1D4F802B0094500E /* HomepageUITests.m */; };
-		4F68F5CE1D4F8B950094500E /* UIBarButtonItem+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F68F5BE1D4F8B950094500E /* UIBarButtonItem+Additions.m */; };
 		4F68F5D01D4F8B950094500E /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F68F5C21D4F8B950094500E /* UIImage+Additions.m */; };
-		4F68F5D11D4F8B950094500E /* UINavigationItem+Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F68F5C41D4F8B950094500E /* UINavigationItem+Addtions.m */; };
 		4F68F5D31D4F8B950094500E /* UIView+ZQPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F68F5C81D4F8B950094500E /* UIView+ZQPlus.m */; };
 		4F68F5E31D4F969F0094500E /* UIColor+ZQPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F68F5E21D4F969F0094500E /* UIColor+ZQPlus.m */; };
 		4F68F5EB1D4F9DD20094500E /* DINCond-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F68F5E51D4F9DD20094500E /* DINCond-Bold.otf */; };
@@ -46,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F0A729D1D509BC100627161 /* UINavigationItem+Addtions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Addtions.h"; sourceTree = "<group>"; };
+		4F0A729E1D509BC100627161 /* UINavigationItem+Addtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Addtions.m"; sourceTree = "<group>"; };
 		4F68F5761D4F802B0094500E /* Homepage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F68F57A1D4F802B0094500E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4F68F57C1D4F802B0094500E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,12 +62,8 @@
 		4F68F59A1D4F802B0094500E /* HomepageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F68F59E1D4F802B0094500E /* HomepageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomepageUITests.m; sourceTree = "<group>"; };
 		4F68F5A01D4F802B0094500E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F68F5BD1D4F8B950094500E /* UIBarButtonItem+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Additions.h"; sourceTree = "<group>"; };
-		4F68F5BE1D4F8B950094500E /* UIBarButtonItem+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Additions.m"; sourceTree = "<group>"; };
 		4F68F5C11D4F8B950094500E /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
 		4F68F5C21D4F8B950094500E /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
-		4F68F5C31D4F8B950094500E /* UINavigationItem+Addtions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Addtions.h"; sourceTree = "<group>"; };
-		4F68F5C41D4F8B950094500E /* UINavigationItem+Addtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Addtions.m"; sourceTree = "<group>"; };
 		4F68F5C71D4F8B950094500E /* UIView+ZQPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZQPlus.h"; sourceTree = "<group>"; };
 		4F68F5C81D4F8B950094500E /* UIView+ZQPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZQPlus.m"; sourceTree = "<group>"; };
 		4F68F5DB1D4F8BA50094500E /* ZQUtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQUtilsMacro.h; sourceTree = "<group>"; };
@@ -207,12 +204,10 @@
 		4F68F5B21D4F8B950094500E /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
-				4F68F5BD1D4F8B950094500E /* UIBarButtonItem+Additions.h */,
-				4F68F5BE1D4F8B950094500E /* UIBarButtonItem+Additions.m */,
 				4F68F5C11D4F8B950094500E /* UIImage+Additions.h */,
 				4F68F5C21D4F8B950094500E /* UIImage+Additions.m */,
-				4F68F5C31D4F8B950094500E /* UINavigationItem+Addtions.h */,
-				4F68F5C41D4F8B950094500E /* UINavigationItem+Addtions.m */,
+				4F0A729D1D509BC100627161 /* UINavigationItem+Addtions.h */,
+				4F0A729E1D509BC100627161 /* UINavigationItem+Addtions.m */,
 				4F68F5E11D4F969F0094500E /* UIColor+ZQPlus.h */,
 				4F68F5E21D4F969F0094500E /* UIColor+ZQPlus.m */,
 				4F68F5C71D4F8B950094500E /* UIView+ZQPlus.h */,
@@ -443,11 +438,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F68F5811D4F802B0094500E /* HomepageController.m in Sources */,
-				4F68F5D11D4F8B950094500E /* UINavigationItem+Addtions.m in Sources */,
 				4F68F5E31D4F969F0094500E /* UIColor+ZQPlus.m in Sources */,
 				4F68F57E1D4F802B0094500E /* AppDelegate.m in Sources */,
-				4F68F5CE1D4F8B950094500E /* UIBarButtonItem+Additions.m in Sources */,
 				4F68F5D31D4F8B950094500E /* UIView+ZQPlus.m in Sources */,
+				4F0A729F1D509BC100627161 /* UINavigationItem+Addtions.m in Sources */,
 				4F68F5D01D4F8B950094500E /* UIImage+Additions.m in Sources */,
 				4F68F5F21D4FBF220094500E /* ZQCallipers.m in Sources */,
 				4F68F57B1D4F802B0094500E /* main.m in Sources */,
