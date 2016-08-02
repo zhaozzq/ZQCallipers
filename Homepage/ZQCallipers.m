@@ -165,11 +165,6 @@
     NSInteger index = round((scrollView.contentOffset.x) / (kStepLongth + 1));
 //    NSInteger index = floor((scrollView.contentOffset.x) / (kStepLongth + 1));
     
-//    CGFloat t = scrollView.contentOffset.x - index * (kStepLongth + 1);
-//    if (t > -2 || t < 2) {
-//        scrollView.contentOffset = CGPointMake(index * (kStepLongth + 1), 0);
-//    }
-    
     if ([_delegate respondsToSelector:@selector(callipers:valueChanged:)]) {
         [_delegate callipers:self valueChanged:index * 100];
     }
@@ -177,32 +172,27 @@
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-    NSLog(@"scrollViewDidEndDragging %zd",decelerate);
     if (!decelerate) {
         
         NSInteger index = round((scrollView.contentOffset.x) / (kStepLongth + 1));
         
-        scrollView.contentOffset = CGPointMake(index * (kStepLongth + 1), 0);
+        [scrollView setContentOffset:CGPointMake(index * (kStepLongth + 1), 0) animated:YES];
 
         if ([_delegate respondsToSelector:@selector(callipers:valueChanged:)]) {
             [_delegate callipers:self valueChanged:index * 100];
         }
-
     }
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    NSLog(@"scrollViewDidEndDragging");
-    
     NSInteger index = round((scrollView.contentOffset.x) / (kStepLongth + 1));
     
 //    CGFloat t = scrollView.contentOffset.x - index * (kStepLongth + 1);
 //    if (t > -2 || t < 2) {
 //        scrollView.contentOffset = CGPointMake(index * (kStepLongth + 1), 0);
 //    }
-    scrollView.contentOffset = CGPointMake(index * (kStepLongth + 1), 0);
-    
+    [scrollView setContentOffset:CGPointMake(index * (kStepLongth + 1), 0) animated:YES];
     if ([_delegate respondsToSelector:@selector(callipers:valueChanged:)]) {
         [_delegate callipers:self valueChanged:index * 100];
     }
