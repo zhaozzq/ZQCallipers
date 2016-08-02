@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HomepageController : UIViewController
+/**
+ *  借贷金额
+ */
+@property (assign, nonatomic) NSInteger amount;
 
 @end
 
