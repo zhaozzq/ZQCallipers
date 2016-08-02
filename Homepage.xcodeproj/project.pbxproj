@@ -326,6 +326,7 @@
 				TargetAttributes = {
 					4F68F5751D4F802B0094500E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = EBVZNRB498;
 					};
 					4F68F58E1D4F802B0094500E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -583,6 +584,7 @@
 			baseConfigurationReference = 6FB6CBED389563409762A9EB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Homepage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhao.Homepage;
@@ -595,6 +597,7 @@
 			baseConfigurationReference = 7C19E6F4654061F983C8C1AA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Homepage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhao.Homepage;
